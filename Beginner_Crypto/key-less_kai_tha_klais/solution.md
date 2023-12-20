@@ -34,3 +34,5 @@ while b"NH4CK" not in my_enc:
 print(my_enc)
 
 ```
+
+Μια άλλη πολύ έξυπνη, εναλλακτική λύση δίνεται από τον Άρη στο βίντεο του με τα writeups των Beginner Crypto του event. Μπορείτε να το βρείτε εδώ: [](https://www.youtube.com/watch?v=FPVY_XfnXE0)
