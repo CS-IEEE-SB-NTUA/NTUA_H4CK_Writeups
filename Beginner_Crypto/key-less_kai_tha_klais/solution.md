@@ -3,9 +3,11 @@
 Το πρώτο στάδιο πρώτα κανει [base64](https://en.wikipedia.org/wiki/Base64) encode τα bytes του flag, έπειτα κάθε byte το γράφει με τη hexadecimal αναπαράσταση του και τέλος κανει base64 **decode** αυτό το hexadecimal string. Αυτό το βήμα με το decode δουλέυει καθώς οι χαρακτήρες hex είναι υποσύνολο των χαρακτήρων του base64, οπότε πάντα ένα hexstring είναι valid base64 encoded string και μπορεί να γίνει decode. Όλη αυτή η διαδικασία επαναλαμβάνεται μέχρις ότου το μήκος του τελικού string να ξεπεράσει το 1000.
 
 Για να αντιστρέψουμε αυτό το βήμα αρκεί να κάνουμε ανάποδα τα encodings. Πιο αναλυτικά, αυτό που έγινε είναι:  
-**`bytes -> base64 encode -> hex -> base64 decode(που είναι πάλι bytes)`**(πολλές φορές)
+**`bytes -> base64 encode -> hex -> base64 decode(που είναι πάλι bytes)`**(πολλές φορές).
+
 Οπότε εμείς χρειάζεται να κάνουμε:  
-**`bytes -> base64 encode(το αντίστροφο του τελικου decode) -> unhex -> base64 decode(το αντίστροφο του encode που θα επιστρέψει πάλι bytes)`**(πολλές φορές)
+**`bytes -> base64 encode(το αντίστροφο του τελικου decode) -> unhex -> base64 decode(το αντίστροφο του encode που θα επιστρέψει πάλι bytes)`**(πολλές φορές).
+
 Σε python αυτό γίνεται εύκολα με:
 ```python
 while b"NH4CK" not in my_enc:
