@@ -1,8 +1,7 @@
 Μας δίνεται μόνο μια `.jpg` εικόνα με έναν κυριούλη που κρατάει μια σημαία και μια περιγραφή που αναφέρει κάτι για 'long flag'.
-
-![](https://github.com/Babafaba/NTUA_H4CK_crypto_challs/blob/main/writeups_for_challs_by_other_authors/flag%20bearer/flag_bearer.jpg)
-hmm
+\
 <img src="https://github.com/Babafaba/NTUA_H4CK_crypto_challs/blob/main/writeups_for_challs_by_other_authors/flag%20bearer/flag_bearer.jpg" alt="image" width="300" height="300">
+\
 Χμμ, πρώτη σκέψη είναι ότι ίσως το αρχείο να έχει κι άλλα bytes που δεν φαίνονται. Στα headers των image formats όπως `.jpg` και `.png` υπάρχει ένα πεδίο που ορίζει το ύψος και το πλάτος της εικόνας. Έτσι, πιθανώς το αρχείο να έχει περισσότερα bytes από όσα γίνονται display απλά και μόνο επειδή έχει πειραχτεί κάποιο από αυτά τα πεδία.\
 \
 Θα μπορούσαμε να βρούμε που είναι αυτα τα πεδία του ύψους και του πλάτους(μάλλον του ύψους μας ενδιαφέρει περισσότερο μιας και η σημαία που κρατάει ο κύριος στη φωτογραφία φαίνεται να εκτείνεται προς τα κάτω) και να δοκιμάσουμε να αλλάξουμε τις τιμές τους.\
