@@ -10,5 +10,7 @@
 \
 ![](https://github.com/Babafaba/NTUA_H4CK_crypto_challs/blob/main/writeups_for_challs_by_other_authors/flag%20bearer/flag_bearer_hexedit.png)
 Μπορούμε απλά να αλλάξουμε την τιμή των δύο bytes από `08 20` σε κάτι άλλο, μεγαλύτερο όπως π.χ. `28 20`, να αποθηκεύσουμε τη νέα εικόνα και να δούμε τι θα εμφανιστεί όταν την ανοίξουμε:
-![](https://github.com/Babafaba/NTUA_H4CK_crypto_challs/blob/main/writeups_for_challs_by_other_authors/flag%20bearer/long_flag_bearer.jpg)
+\
+<img src="https://github.com/Babafaba/NTUA_H4CK_crypto_challs/blob/main/writeups_for_challs_by_other_authors/flag%20bearer/long_flag_bearer.jpg" alt="image" width="300" height="600">
+\
 Ωπ! Πράγματι η φωτογραφία είχε ένα κρυμμένο κομμάτι που πλέον είναι ευκρινές, δίνοντας μας το κρυμμένο flag!
