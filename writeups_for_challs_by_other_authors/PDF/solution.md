@@ -2,5 +2,5 @@
 \
 Κάνοντας το copy-paste κάπου ώστε να το διαβάσουμε εμφανίζεται το κείμενο `'!kz$TAh==jG8hG8IEkhG8lhmAnV`. Φαίνεται σα να είναι κωδικοποιημένο με κάποια μέθοδο οπότε πρώτη σκέψη είναι να χρησιμοποιήσουμε το [CyberChef](https://gchq.github.io/CyberChef/).\
 \
-Τo CyberChef δεν αναγνωρίζει αυτόματα κάποιο κλασικό encoding. Δοκιμάζουμε όμως την επιλογή `ROT47` και παίζουμε με τις τιμές των shifts. Για shift ίσο με 39 το flag εμφανίζεται ευκρινώς:
+Τo CyberChef δεν αναγνωρίζει αυτόματα κάποιο κλασικό encoding. Μια καλή ιδέα είναι να δοκιμάσουμε την επιλογή `ROT47` και να παίξουμε με τις τιμές των shifts. Για καλή μας τύχη το CyberChef έχει μια bruteforce επιλογή για ROT47 όπου μάλιστα μπορούμε να δώσουμε το γνωστό σε εμάς κομμάτι του plaintext(δηλαδή τη γνωστή από το flag format αρχή του flag `NH4CK`) για να περιορίσουμε τις πιθανές τιμές του shift. Πράγματι, όπως φαίνεται στην εικόνα παρακάτω, το CyberChef βρήκε αμέσως ορθά το flag, χρησιμοποιώντας shift 39: 
 ![](https://github.com/Babafaba/NTUA_H4CK_crypto_challs/blob/main/writeups_for_challs_by_other_authors/PDF/pdf_cyberchef.png)
