@@ -2,4 +2,4 @@
 Δοκιμάζουμε όπως πριν να δούμε αν υπάρχει κάποιο κρυμμένο κείμενο μέσα στο pdf αλλά αυτή τη φορά δε βρίσκουμε κάτι. Μήπως αντί για κείμενο υπάρχουν *εικόνες* κρυμμένες μέσα στο pdf;\
 \
 Με λίγο googling βρίσκουμε [αυτό](https://tools.pdf24.org/en/extract-images) το site που φαίνεται να κάνει extract images από pdf. Δοκιμάζουμε να κάνουμε upload το pdf μας και να κάνουμε extract, το zip που δημιουργεί το website έχει όντως μια κρυφή εικόνα με το flag:
-![](https://github.com/Babafaba/NTUA_H4CK_crypto_challs/blob/main/writeups_for_challs_by_other_authors/PDF 2.0/1.png)
+![](https://github.com/Babafaba/NTUA_H4CK_crypto_challs/blob/main/writeups_for_challs_by_other_authors/PDF%202.0/1.png)
