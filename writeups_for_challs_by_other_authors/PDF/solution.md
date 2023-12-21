@@ -3,10 +3,4 @@
 Κάνοντας το copy-paste κάπου ώστε να το διαβάσουμε εμφανίζεται το κείμενο `'!kz$TAh==jG8hG8IEkhG8lhmAnV`. Φαίνεται σα να είναι κωδικοποιημένο με κάποια μέθοδο οπότε πρώτη σκέψη είναι να χρησιμοποιήσουμε το [CyberChef](https://gchq.github.io/CyberChef/).\
 \
 Τo CyberChef δεν αναγνωρίζει αυτόματα κάποιο κλασικό encoding. Δοκιμάζουμε όμως την επιλογή `ROT47` και παίζουμε με τις τιμές των shifts. Για shift ίσο με 39 το flag εμφανίζεται ευκρινώς:
-![](https://github.com/Babafaba/NTUA_H4CK_crypto_challs/edit/main/writeups_for_challs_by_other_authors/PDF/pdf_cyberchef.png)
-a
-First time?\
-![](https://github.com/Babafaba/NTUA_H4CK_crypto_challs/blob/main/Beginner_Crypto/My_first_RSA/RSA.png)
-\
-\
-Author: Babafaba
+![](https://github.com/Babafaba/NTUA_H4CK_crypto_challs/blob/main/writeups_for_challs_by_other_authors/PDF/pdf_cyberchef.png)
