@@ -1,3 +1,10 @@
+Title: &emsp;Letter to Santa\
+\
+Description:&emsp;Last chance for your Christmas gift. What are you waiting for?\
+\
+Author:&emsp; N0_Sp3c14l_Ch4r
+\
+\
 Αρχικά ελέγχουμε τα mitigations του εκτελέσιμου.\
 \
 ![image](https://github.com/Babafaba/NTUA_H4CK_crypto_challs/assets/56980206/996f27da-9b12-4f7e-8e0f-3c3f408334ca)
@@ -57,5 +64,6 @@ print(b'N'+flag[::-1]+b'}')
 ```
 \
 Εκτελώντας το παραπάνω, λαμβάνουμε:\
+\
 ![image](https://github.com/Babafaba/NTUA_H4CK_crypto_challs/assets/56980206/322a51d4-615c-4ed3-b8ee-0fd58f818673)
 
