@@ -7,3 +7,6 @@
 \
 Αρχικά ελέγχουμε τα mitigations του εκτελέσιμου.\
 \
+![image](https://github.com/Babafaba/NTUA_H4CK_crypto_challs/assets/56980206/a68c824a-5238-4279-bbf5-f69cdf5b9311)\
+\
+Παρατηρούμε πως έχει Partial RELRO, NX και PIE enabled. Ωστόσο, δε θα χρειαστεί να ασχοληθούμε με αυτά στη συνέχεια.\
