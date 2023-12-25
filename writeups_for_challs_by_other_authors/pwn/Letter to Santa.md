@@ -1,8 +1,8 @@
-Title: &emsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Letter to Santa\
+**Title**: &emsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Letter to Santa\
 \
-Description:&nbsp;&nbsp;&nbsp;&nbsp;Last chance for your Christmas gift. What are you waiting for?\
+**Description**:&nbsp;&nbsp;&nbsp;&nbsp;Last chance for your Christmas gift. What are you waiting for?\
 \
-Author:&emsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;N0_Sp3c14l_Ch4r
+**Author**:&emsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;N0_Sp3c14l_Ch4r
 \
 \
 Αρχικά ελέγχουμε τα mitigations του εκτελέσιμου.\
