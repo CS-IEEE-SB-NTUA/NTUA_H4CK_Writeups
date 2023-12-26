@@ -4,6 +4,8 @@ LAIKO LAXEIO 3 STOUS 4 KERDIZOUN ELA PAREPAREPAREPAREPAREEE
 
 http://ntuah4ck-rnd.chals.io
 
+Flag: `N4HACK{0MG_Y0u_4re_4_m1lli0nar3_0r_4t_least_G0t_A_FL4G!!!]`
+
 # Solution
 
 Μόλις πατήσουμε το link στην περιγραφή βλέπουμε μια (μάλλον sketchy) φόρμα συμμετοχής σε κλήρωση.
