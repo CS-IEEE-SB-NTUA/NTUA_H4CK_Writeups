@@ -1,0 +1,9 @@
+Title: An Email from Aunt Chloe
+
+Author: Connar
+
+Flag: NHACK{4_7h3_23c02d_7h15_w45_4n_4c7u4l_m4lw4r3_54mpl3_s0_c0n92475!!}
+
+Difficulty: Medium / Hard
+
+Description: I recently got an email from my Aunt Chloe. She visited the village of Santa in the North pole and she was so kind that see sent me a traditional recipe that they make there followed by an image of the village. What an amazing Aunt!

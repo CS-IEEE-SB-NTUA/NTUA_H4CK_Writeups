@@ -1,0 +1,12 @@
+Title: Mr.Beast Giveaway
+
+Author: Connar
+
+Flag : NHACK{M2.B3457_51735_423_3v32ywh323_n0w4d4y5}
+
+Difficulty: Easy
+
+Description: It was almost Christmas. You made hot chocolate to drink, sat on your comfy couch, and watched the newly uploaded Mr Beast video. Soon after, an ad appeared on your screen that led to a giveaway page seemingly run by Mr Beast, offering a huge Christmas prize for a few lucky winners. Filled with excitement after the video, you subscribed to the giveaway page and waited. And waited.  
+
+Christmas went by, but nothing happened. Shortly afterward, you discovered an article about a phishing website, the same one you subscribed to. Confused as you read through the article, you decided to investigate the website yourself and captured its traffic. What can you find?
+
