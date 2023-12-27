@@ -8,7 +8,11 @@ Flag Format NH4CK{******}
 
 Hint: You are looking for the name of the virus. NOT the name OR the species of the bird carrying the virus. Try to find how the bird got there (or by whom). When you find the virus you will know.
 
-Flag: `NH4CK{IST_18}`
+Author: SeekerRook
+
+# Flag
+
+NH4CK{IST_18}
 
 # Solution
 
