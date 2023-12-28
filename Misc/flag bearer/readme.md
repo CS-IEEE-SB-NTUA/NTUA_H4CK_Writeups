@@ -1,6 +1,6 @@
 Μας δίνεται μόνο μια `.jpg` εικόνα με έναν κυριούλη που κρατάει μια σημαία και μια περιγραφή που αναφέρει κάτι για 'long flag'.
 \
-<img src="https://github.com/Babafaba/NTUA_H4CK_crypto_challs/blob/main/writeups_for_challs_by_other_authors/flag%20bearer/flag_bearer.jpg" alt="image" width="300" height="300">
+<img src="flag_bearer.jpg" alt="image" width="300" height="300">
 \
 Χμμ, πρώτη σκέψη είναι ότι ίσως το αρχείο να έχει κι άλλα bytes που δεν φαίνονται. Στα headers των image formats όπως `.jpg` και `.png` υπάρχει ένα πεδίο που ορίζει το ύψος και το πλάτος της εικόνας. Έτσι, πιθανώς το αρχείο να έχει περισσότερα bytes από όσα γίνονται display απλά και μόνο επειδή έχει πειραχτεί κάποιο από αυτά τα πεδία.\
 \
@@ -8,9 +8,9 @@
 \
 Έπειτα από λίγο googling βρήκαμε [αυτή](https://stackoverflow.com/a/24285517) την απάντηση σε ένα stackoverflow thread στην οποία εξηγείται με σαφήνεια ότι ψάχνουμε για τα bytes `ff c0` και λίγα(3) bytes πιο μετά είναι αποθηκευμένο το ύψος της εικόνας. Ανοίγοντας το αρχείο στο [hexedit](https://hexed.it/) εντοπίζουμε κατευθείαν αυτά τα 2 bytes(με κόκκινο περίγραμμα) καθώς και τα 2 bytes(με μπλε περίγραμμα) στα οποία θα έπρεπε να είναι αποθηκευμένο το ύψος της εικόνας αν η απάντηση στο stackoverflow είναι σωστή(spoiler alert: είναι).\
 \
-![](https://github.com/Babafaba/NTUA_H4CK_crypto_challs/blob/main/writeups_for_challs_by_other_authors/flag%20bearer/flag_bearer_hexedit.png)
+![](flag_bearer_hexedit.png)
 Μπορούμε απλά να αλλάξουμε την τιμή των δύο bytes από `08 20` σε κάτι άλλο, μεγαλύτερο όπως π.χ. `28 20`, να αποθηκεύσουμε τη νέα εικόνα και να δούμε τι θα εμφανιστεί όταν την ανοίξουμε:
 \
-<img src="https://github.com/Babafaba/NTUA_H4CK_crypto_challs/blob/main/writeups_for_challs_by_other_authors/flag%20bearer/long_flag_bearer.jpg" alt="image" width="300" height="1200">
+<img src="=long_flag_bearer.jpg" alt="image" width="300" height="1200">
 \
 Ωπ! Πράγματι η φωτογραφία είχε ένα κρυμμένο κομμάτι που πλέον είναι ευκρινές, δίνοντας μας το κρυμμένο flag!
