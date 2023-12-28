@@ -1,7 +1,7 @@
 Δίνεται ένα ELF αρχείο. Πριν το τρέξουμε το πετάμε σε μια IDA και κάνουμε generate pseudocode:\
 \
-![](https://github.com/Babafaba/NTUA_H4CK_crypto_challs/blob/main/writeups_for_challs_by_other_authors/babyrev/babyrev_IDA_1.png)
-![](https://github.com/Babafaba/NTUA_H4CK_crypto_challs/blob/main/writeups_for_challs_by_other_authors/babyrev/babyrev_IDA_2.png)
+![](babyrev_IDA_1.png)
+![](babyrev_IDA_2.png)
 \
 Τα βήματα που εκτελεί το πρόγραμμα είναι τα εξής:
 - Ζητάει ένα input από το χρήστη.
