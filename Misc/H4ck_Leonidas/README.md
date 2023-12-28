@@ -14,7 +14,9 @@ The Company Service is running on the following URL below.
 
 Author: SeekerRook & vsl
 
-Flag: `NH4CK{T4k3_C@r3_0f_Wh47_U_P0$T} `
+# Flag
+
+NH4CK{T4k3_C@r3_0f_Wh47_U_P0$T} 
 
 # Solution
 Όπως φαίνεται από την ιστοσελίδα της εταιρίας χρειαζόμαστε
